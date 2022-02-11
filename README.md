@@ -1,4 +1,4 @@
-# Tutoring Sessions Yachay Tech (TutoYT)
+# Tutoring Sessions Yachay Tech *(in progress)*
 
 ### Personal project including:
 - HTML
