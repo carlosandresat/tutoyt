@@ -4,7 +4,7 @@
 - HTML
 - Javascript
 - CSS
-- -jQuery
+- jQuery
 - PHP
 - Ajax requests with JSON
 - MySQL
