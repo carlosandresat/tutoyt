@@ -66,7 +66,7 @@ $(document).ready(function (){
                     </div>`;
                     
         });
-        $("#tutores").html(txt);
+        $("#tutor").html(txt);
       }
   });
 });
@@ -101,31 +101,34 @@ $(document).ready(function(){
 
 let navbar = document.querySelector('.navbar');
 
-document.querySelector('#menu-btn').onclick = () =>{
+document.querySelector('#asignaturas-btn').onclick = () =>{
     navbar.classList.toggle('active');
-    searchForm.classList.remove('active');
-    cartItem.classList.remove('active');
-}
-
-let searchForm = document.querySelector('.search-form');
-
-document.querySelector('#search-btn').onclick = () =>{
-    searchForm.classList.toggle('active');
-    navbar.classList.remove('active');
     cartItem.classList.remove('active');
 }
 
 let cartItem = document.querySelector('.cart-items-container');
 
-document.querySelector('#cart-btn').onclick = () =>{
+/*document.querySelector('#user-btn').onclick = () =>{
     cartItem.classList.toggle('active');
     navbar.classList.remove('active');
-    searchForm.classList.remove('active');
+}*/
+
+let loginForm = document.querySelector('.login-form');
+
+document.querySelector('#user-btn').onclick = () =>{
+  loginForm.classList.add('popup');
+  cartItem.classList.remove('active');
+  navbar.classList.remove('active');
 }
 
+/*Using jQuery just for a change*/
+$('.login-form form .fa-times').click(function(){
+  $('.login-form').removeClass('popup');
+});
+
 window.onscroll = () =>{
+    loginForm.classList.remove('popup')
     navbar.classList.remove('active');
-    searchForm.classList.remove('active');
     cartItem.classList.remove('active');
 }
 

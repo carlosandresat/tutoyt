@@ -24,21 +24,16 @@
 
     <nav class="navbar">
         <a href="#home">Inicio</a>
-        <a href="#about">Objetivo</a>
-        <a href="#menu">Asignaturas</a>
-        <a href="#products">Tutores</a>
+        <a href="#objetivo">Objetivo</a>
+        <a href="#asignaturas">Asignaturas</a>
+        <a href="#tutores">Tutores</a>
         <a href="#review">Reviews</a>
     </nav>
 
     <div class="icons">
-        <div class="fas fa-search" id="search-btn"></div>
-        <div class="fas fa-user" id="cart-btn"></div>
-        <div class="fas fa-bars" id="menu-btn"></div>
-    </div>
 
-    <div class="search-form">
-        <input type="search" id="search-box" placeholder="search here...">
-        <label for="search-box" class="fas fa-search"></label>
+        <div class="fas fa-user" id="user-btn"></div>
+        <div class="fas fa-bars" id="asignaturas-btn"></div>
     </div>
 
     <div class="cart-items-container">
@@ -79,7 +74,22 @@
 
 </header>
 
-<!-- Home  -->
+<!-- Login  -->
+
+<div class="login-form">
+
+    <form action="">
+        <h3>Login</h3>
+        <input type="email" placeholder="Username" class="box">
+        <input type="password" placeholder="Contraseña" class="box">
+        <p>No tienes una cuenta? <a href="#">Regístrate ya!</a></p>
+        <input type="submit" class="btn" value="Login">
+        <i class="fas fa-times"></i>
+    </form>
+
+</div>
+
+<!-- Inicio  -->
 
 <section class="home" id="home">
 
@@ -91,16 +101,16 @@
 
 </section>
 
-<!-- About  -->
+<!-- Objetivo  -->
 
-<section class="about" id="about">
+<section class="objetivo" id="objetivo">
 
     <h1 class="heading"> <span>Nuestro</span> objetivo </h1>
 
     <div class="row">
 
         <div class="image">
-            <img src="images/about-img.jpeg" alt="">
+            <img src="images/objetivo-img.jpeg" alt="">
         </div>
 
         <div class="content">
@@ -115,9 +125,9 @@
 </section>
 
 
-<!-- Menu  -->
+<!-- Asignaturas  -->
 
-<section class="menu" id="menu">
+<section class="asignaturas" id="asignaturas">
 
     <h1 class="heading"> Nuestras <span>asignaturas</span> </h1>
 
@@ -129,13 +139,13 @@
 
 <!--Tutores -->
 
-<section class="products" id="products">
+<section class="tutores" id="tutores">
 
     <h1 class="heading"> Nuestros <span>tutores</span> </h1>
 
     <div class="swiper box-container">
 
-        <div class="swiper-wrapper" id="tutores">
+        <div class="swiper-wrapper" id="tutor">
 
         </div>
 
@@ -294,33 +304,30 @@
 
 </section>
 
-<!-- -->
-
-
 <!-- Footer -->
 
 <section class="footer">
 
+    <!-- Include networks (Future work)
     <div class="share">
         <a href="#" class="fab fa-facebook-f"></a>
         <a href="#" class="fab fa-twitter"></a>
         <a href="#" class="fab fa-instagram"></a>
         <a href="#" class="fab fa-linkedin"></a>
     </div>
+    -->
 
     <div class="links">
-        <a href="#">home</a>
-        <a href="#">about</a>
-        <a href="#">menu</a>
-        <a href="#">products</a>
-        <a href="#">review</a>
+        <a href="#home">Inicio</a>
+        <a href="#objetivo">Objetivo</a>
+        <a href="#asignaturas">Asignaturas</a>
+        <a href="#tutores">Tutores</a>
+        <a href="#reviews">Reviews</a>
     </div>
 
     <div class="credit">Developed by <span>Carlos Arévalo</span> | All rights reserved.</div>
 
 </section>
-
-<!-- -->
 
 <!-- JS  -->
 
